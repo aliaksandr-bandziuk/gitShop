@@ -41,15 +41,15 @@
 }
 
 #catalog:after {
-  content: url(/img/symbols/arrow__down.svg);
+  content: url(../img/symbols/arrow__down.svg);
   margin-left: 5px;
 }
 #vendors:after {
-  content: url(/img/symbols/arrow__down.svg);
+  content: url(../img/symbols/arrow__down.svg);
   margin-left: 5px;
 }
 #clients:after {
-  content: url(/img/symbols/arrow__down.svg);
+  content: url(../img/symbols/arrow__down.svg);
   margin-left: 5px;
 }
 

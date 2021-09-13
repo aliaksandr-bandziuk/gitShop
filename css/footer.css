@@ -486,6 +486,14 @@ input[type=number]:focus {
   .footer__wrapper {
     grid-template-columns: 1fr 2fr;
   }
+  .footer__wrapper .footer-right-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer__wrapper .footer-right-col .footer__title {
+    margin-bottom: 15px;
+  }
 
   .items-hidden {
     display: none;
@@ -502,12 +510,6 @@ input[type=number]:focus {
     text-align: center;
   }
   .footer__wrapper .footer-right-col {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     text-align: center;
-  }
-  .footer__wrapper .footer-right-col .footer__title {
-    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=footer.css.map */

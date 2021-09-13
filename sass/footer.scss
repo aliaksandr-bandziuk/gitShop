@@ -114,16 +114,19 @@
 @media(max-width: 1050px) {
   .footer__wrapper {
     grid-template-columns: 1fr 2fr;
-}
-  // .footer-right-col {
-  //   display: grid; 
-  //   grid-template-columns: 1fr 1fr; 
-  //   grid-template-rows: 30px auto; 
-  //   gap: 0px 0px; 
-  //   grid-template-areas: 
-  //     "footer__titles ."
-  //     "footer__titles ."; 
-  // }
+
+    .footer-right-col {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      // text-align: center;
+    
+      .footer__title {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
   .items-hidden {
     display: none;
   }
@@ -141,20 +144,8 @@
     }
 
     .footer-right-col {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
       text-align: center;
-
-      .footer__title {
-        margin-bottom: 15px;
-    }
     }
   }
-
-
-
-
-
   
 }
