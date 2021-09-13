@@ -1,1 +1,1 @@
-# gitShop
+# cosproBandziuk
