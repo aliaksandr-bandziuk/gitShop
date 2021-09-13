@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url(../fonts/CeraPro-Regular.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/ProximaNova-Regular.woff);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Cera Pro", "Arial", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* удаляю стрелки из инпута для всех браузеров */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}

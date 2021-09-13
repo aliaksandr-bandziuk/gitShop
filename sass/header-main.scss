@@ -1,0 +1,212 @@
+@import 'normalize';
+@import 'main';
+
+.header-main {
+  .header__wrapper-main {
+    display: flex;
+    justify-content: space-between;
+    .company {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      margin-bottom: 11px;
+      &__logo {
+        font-family: "Cormorant", "Arial";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: $main-color;
+      }
+      .line-y {
+        width: 0.5px;
+        height: 20px;
+        background: $main-color;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      &__description {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 120%;
+        color: $main-color;
+        width: 112px;
+      }
+    }
+    .contacts-main {
+      display: flex;
+      align-items: center;
+      // justify-content: flex-end;
+      .icons__main {
+        &-items {
+          display: flex;
+          .icons__main-item {
+            list-style-type: none;
+            &:not(:last-child) {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .phone {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main-color;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #AD9685;
+
+  &__active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__list {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      position: relative; 
+      padding-top: 15px;
+      padding-bottom: 15px;
+      list-style: none;
+      font-family: Cera Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        // letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 10px 0;
+        position: relative;
+      }
+      
+      a::after { 
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        background: none repeat scroll 0 0 transparent;
+        height: 2px;
+        width: 0;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
+      
+      a:hover::after { 
+        width: 100%; 
+        left: 0; 
+      }
+    }
+  }
+}
+
+.mobile-menu-main {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  text-align: center;
+  z-index: 99;
+  background: url(../img/icons/icon-open.svg) no-repeat center;
+  background-color: #fff;
+  transition: all 0.5s ease-out;
+  padding-left: 90%;
+
+  &__list {
+    position: fixed;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 999;
+    top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    bottom: 0; 
+    overflow: hidden;
+
+    .mobile-menu-main__items {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 50px;
+      margin-top: -1px;
+
+      .mobile-menu-main__item {
+        cursor: pointer;
+        margin-bottom: 5px;
+        font-size: 20px;
+        list-style: none;
+      }
+    }
+  }
+}
+
+.mobile-menu-main__close {
+  background: url(../img/icons/icon-close.svg) no-repeat center;
+  padding-left: 90%;
+  background-color: #fff;
+}
+.mobile-menu__item:last-child {
+  margin-top: 10px;
+}
+
+.mobile-phone__button {
+  width: 120px;
+  height: 30px;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 53px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 14px;
+  color: #333333;
+}
+
+.mobile-menu-main__list-hidden {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  .header__wrapper-main {
+    display: none;
+  }
+  .mobile-menu-main {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+ 
+}

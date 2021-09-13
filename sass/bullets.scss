@@ -1,0 +1,22 @@
+@import 'normalize';
+@import 'main';
+
+.bullets {
+  margin-bottom: 100px;
+  &__list {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &-item {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #080508;
+      width: 198px;
+    }
+  }
+}
