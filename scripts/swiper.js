@@ -1,3 +1,18 @@
+const swiperMain = new Swiper('.swiper-main', {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.buttons__items',
+    bulletClass: 'buttons__item',
+    bulletActiveClass: 'buttons__item-active',
+    clickable: true,
+  },
+});
+
 const swiper = new Swiper('.swiper-same', {
   slidesPerView: 4,
   spaceBetween: 10,
@@ -94,37 +109,6 @@ const swiperPopular = new Swiper('.swiper-popular', {
       // spaceBetween: 20
     }
   }
-});
-
-const swiperMain = new Swiper('.swiper-main', {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  observer: true,
-  observeParents: true,
-  grabCursor: true,
-  pagination: {
-    el: '.slide__numbers',
-    type: 'fraction',
-    clickable: true,
-    renderFraction: (currentClass, totalClass) => `
-      <span class="${currentClass}"></span> /
-      <span class="${totalClass}"></span>`,
-  },
-  on: {
-    init() {
-      setTimeout(updateFraction, 0, this)
-    },
-    slideChange() {
-      updateFraction(this);
-    },
-    resize() {
-      updateFraction(this);
-    },
-  },
-  navigation: {
-    nextEl: '.arrow__right',
-    prevEl: '.arrow__left',
-  },
 });
 
 // Функция, которая считает слайды
