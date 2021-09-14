@@ -671,4 +671,27 @@ input[type=number]:focus {
   -moz-animation: scroll 10s infinite linear;
   animation: scroll 10s infinite linear;
   background: #F5F2EF;
+}
+
+@media (max-width: 1250px) {
+  .first-screen .swiper-main .slider__content-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .first-screen .swiper-main .slider__content-title {
+    display: none;
+  }
+  .first-screen .swiper-main .slider__buttons {
+    display: none;
+  }
+}
+@media (max-width: 771px) {
+  .first-screen .swiper-main .slider__content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }/*# sourceMappingURL=first-screen.css.map */

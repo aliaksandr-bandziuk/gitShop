@@ -98,7 +98,6 @@
           text-transform: uppercase;
           color: $main-color;
           margin: 0 auto;
-          // transform: rotate(-10deg);
 
           &:hover {
             color: #fff;
@@ -124,10 +123,6 @@
         opacity: 0.65;
         cursor: pointer;
         z-index: 0;
-
-        // &:hover {
-        //   background: #C4C4C4;
-        // }
 
         &-text {
           position: relative;
@@ -444,3 +439,40 @@
   //   }
   
   // }
+
+  @media(max-width: 1250px) {
+    .first-screen {
+      .swiper-main {
+        .slider__content-title {
+          font-size: 35px;
+          margin-bottom: 20px;
+        }
+      }
+    } 
+  }
+
+  @media(max-width: 1000px) {
+    .first-screen {
+      .swiper-main {
+        .slider__content-title {
+          display: none;
+        }
+        .slider__buttons {
+          display: none;
+        }
+      }
+    } 
+  }
+
+  @media(max-width: 771px) {
+    .first-screen {
+      .swiper-main {
+        .slider__content {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+      }
+    }
+  }
