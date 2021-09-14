@@ -199,9 +199,12 @@
 }
 
 @media (max-width: 940px) {
-  .header__wrapper-main {
-    display: none;
+  .header-main {
+    .header__wrapper-main {
+      display: none;
+    }
   }
+  
   .mobile-menu-main {
     display: block;
   }
