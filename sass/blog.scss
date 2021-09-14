@@ -279,3 +279,19 @@
     }
   }
 }
+
+@media(max-width: 1311px) {
+  .blog__articles {
+    justify-content: center;
+
+    .main__article:after {
+      height: 99.5%;
+    }
+
+    .articles__right {
+      .article__top {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

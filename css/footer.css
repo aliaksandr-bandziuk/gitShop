@@ -499,6 +499,11 @@ input[type=number]:focus {
     display: none;
   }
 }
+@media (max-width: 850px) {
+  .logo__footer {
+    padding-top: 0;
+  }
+}
 @media (max-width: 650px) {
   .footer__wrapper {
     display: flex;

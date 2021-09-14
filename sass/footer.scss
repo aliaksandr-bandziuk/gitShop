@@ -89,12 +89,6 @@
   }
 }
 
-
-
-
-
-
-
 @media(max-width: 1360px) {
   .footer-right-col {
     grid-template-columns: .8fr .7fr 1fr 1fr 1fr; 
@@ -129,6 +123,12 @@
 
   .items-hidden {
     display: none;
+  }
+}
+
+@media(max-width: 850px) {
+  .logo__footer {
+    padding-top: 0;
   }
 }
 

@@ -634,4 +634,16 @@ input[type=number]:focus {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+
+@media (max-width: 1311px) {
+  .blog__articles {
+    justify-content: center;
+  }
+  .blog__articles .main__article:after {
+    height: 99.5%;
+  }
+  .blog__articles .articles__right .article__top {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=blog.css.map */

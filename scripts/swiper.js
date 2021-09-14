@@ -96,6 +96,37 @@ const swiperPopular = new Swiper('.swiper-popular', {
   }
 });
 
+const swiperMain = new Swiper('.swiper-main', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  observer: true,
+  observeParents: true,
+  grabCursor: true,
+  pagination: {
+    el: '.slide__numbers',
+    type: 'fraction',
+    clickable: true,
+    renderFraction: (currentClass, totalClass) => `
+      <span class="${currentClass}"></span> /
+      <span class="${totalClass}"></span>`,
+  },
+  on: {
+    init() {
+      setTimeout(updateFraction, 0, this)
+    },
+    slideChange() {
+      updateFraction(this);
+    },
+    resize() {
+      updateFraction(this);
+    },
+  },
+  navigation: {
+    nextEl: '.arrow__right',
+    prevEl: '.arrow__left',
+  },
+});
+
 // Функция, которая считает слайды
 // Использовать с кодом внутри Swiper
 function updateFraction(slider) {

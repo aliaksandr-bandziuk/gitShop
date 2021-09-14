@@ -432,8 +432,10 @@ input[type=number]:focus {
   margin-left: 80px;
 }
 .subscribe .subscribe__wrapper {
-  max-width: 90%;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .subscribe .subscribe__wrapper .subscribe-form {
   display: flex;
@@ -482,13 +484,14 @@ input[type=number]:focus {
 @media (max-width: 900px) {
   .subscribe {
     max-width: 90%;
+    margin-inline: auto;
   }
   .subscribe .subscribe-input {
-    padding-right: 20%;
+    padding-right: 0;
   }
   .subscribe .subscribe-button {
     font-size: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }/*# sourceMappingURL=subscribe.css.map */
