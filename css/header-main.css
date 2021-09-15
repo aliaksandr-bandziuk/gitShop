@@ -415,6 +415,8 @@ input[type=number]:focus {
   line-height: 27px;
   text-transform: uppercase;
   color: #515855;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .header-main .header__wrapper-main .company .line-y {
   width: 0.5px;
