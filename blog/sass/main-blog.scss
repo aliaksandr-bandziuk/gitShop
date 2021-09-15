@@ -48,7 +48,7 @@
           "picture description"
           "picture date";
         
-          .picture {
+        .picture {
           grid-area: picture;
           display: inline-block; /* Строчно-блочный элемент */
           overflow-x: hidden; /* Скрываем всё за контуром */
@@ -88,6 +88,13 @@
       
         .description {
           grid-area: description;
+
+          .blog__description {
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 140%;
+            color: #080508;
+          }
         }
   
         .date {
