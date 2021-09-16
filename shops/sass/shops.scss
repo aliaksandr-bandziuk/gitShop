@@ -1,0 +1,79 @@
+@import 'normalize';
+@import 'main';
+
+.shops {
+  &__title {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #080508;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &__map {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 30% 70%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "adress map"; 
+    align-items: center;
+    margin-bottom: 50px;
+
+    @media (max-width: 920px) {
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "adress"
+        "map";
+    }
+  }
+  .adress {
+    grid-area: adress;
+
+    h3 {
+      font-family: "Cormorant", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #080508;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      max-width: 85%;
+
+      @media (max-width: 920px) {
+        margin-inline: auto;
+      }
+    }
+    
+    p {
+      font-family: $main-font;
+      font-size: 16px;
+      color: #2b2b2b;
+      font-weight: normal;
+      line-height: 1.35;
+      margin-top: 0;
+      margin-bottom: 25px;
+      max-width: 85%;
+
+      @media (max-width: 920px) {
+        margin-inline: auto;
+      }
+    }
+  }
+  .map {
+    grid-area: map;
+    max-width: 90%;
+    
+    @media (max-width: 920px) {
+      margin-inline: auto;
+    }
+  }
+  
+}
