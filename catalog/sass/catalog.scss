@@ -16,15 +16,15 @@
 .catalog__page {
   display: grid;
   grid-auto-columns: 1fr; 
-  grid-template-columns: 20% 80%; 
+  grid-template-columns: 30% 70%; 
   grid-template-rows: 1fr; 
   gap: 0px 5px; 
   grid-template-areas: 
     "sidebar main";
 
-  @media (max-width: 1210px) {
-    grid-template-columns: 30% 70%;
-  }
+  // @media (max-width: 1210px) {
+  //   grid-template-columns: 30% 70%;
+  // }
   
     @media (max-width: 950px) {
     grid-template-columns: 1fr;
@@ -146,13 +146,13 @@
       align-items: center;
 
       .content {
-        width: calc(100% / 4.2);
+        width: calc(100% / 3.2);
         // border: 1px solid lightgrey;
         display: none;
 
-        @media (max-width: 1400px) {
-          width: calc(100% / 3.2);
-        }
+        // @media (max-width: 1400px) {
+        //   width: calc(100% / 3.2);
+        // }
 
         @media (max-width: 1210px) {
           width: calc(100% / 2.2);
