@@ -494,13 +494,18 @@ input[type=number]:focus {
   margin-right: auto;
   margin-bottom: 2px;
   cursor: pointer;
+  display: inline-block;
+  /* Строчно-блочный элемент */
+  overflow-x: hidden;
+  /* Скрываем всё за контуром */
+  overflow-y: hidden;
 }
 .goods__popular .goods__item .goods__img-pic {
   z-index: 1;
+  transition: 0.5s ease-in-out;
 }
 .goods__popular .goods__item .goods__img-pic:hover {
   transform: scale(1.1);
-  transition: 0.5s ease-in-out;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
