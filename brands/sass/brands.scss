@@ -60,6 +60,36 @@
         ". . . ."
         ". . . .";
 
+      @media (max-width: 1100px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . .";
+      }
+
+      @media (max-width: 641px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . "
+        ". . ";
+      }
+    
       .abc__wrapper {
         .abc__title {
           font-family: "Cormorant";

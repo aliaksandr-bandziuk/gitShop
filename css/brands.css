@@ -441,6 +441,18 @@ input[type=number]:focus {
   grid-auto-flow: row;
   grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ." ". . . ." ". . . .";
 }
+@media (max-width: 1100px) {
+  .brands__wrapper .abc {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . .";
+  }
+}
+@media (max-width: 641px) {
+  .brands__wrapper .abc {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". . " ". . " ". . " ". . " ". . " ". . " ". . " ". . " ". . " ". . " ". . " ". . ";
+  }
+}
 .brands__wrapper .abc .abc__wrapper .abc__title {
   font-family: "Cormorant";
   font-size: 25px;
