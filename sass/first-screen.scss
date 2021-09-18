@@ -18,6 +18,27 @@
   .swiper-main {
     position: relative;
 
+    .hidden__button {
+      position: absolute;
+      top: 60%;
+      left: 10%;
+      // display: flex;
+      display: none;
+      margin-inline: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      border: 1px solid #f5893e;
+      border-radius: 5px;
+      background: #f5893e;
+      color: #fff;
+      width: 50px;
+      padding: 5px;
+
+      @media (max-width: 560px) {
+        display: flex;
+      }
+    }
+
     .slider__content {
       position: absolute;
       // left: 10%;
@@ -33,6 +54,10 @@
       transform: translate(-15%, -50%);
       text-align: center;
       // закончил центрировать вертикально и горизонтально
+
+      @media (max-width: 560px) {
+        display: none;
+      }
 
       &-pretitle {
         font-family: $main-font;
@@ -64,6 +89,7 @@
         margin-right: auto;
         margin-bottom: 30px;
       }
+
       &-text {
         width: 440px;
         font-family: Cera Pro;
@@ -129,6 +155,15 @@
 
         @media (max-width: 950px) {
           left: calc(55% - 100px);
+        }
+
+        @media (max-width: 560px) {
+          left: 20%;
+          top: 60%;
+          border: 1px solid #E33834;
+          border-radius: 60%;
+          background: #E33834;
+          padding: 0;
         }
       }
 

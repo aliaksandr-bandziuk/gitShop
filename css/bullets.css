@@ -416,6 +416,11 @@ input[type=number]:focus {
   color: #080508;
   width: 198px;
 }
+@media (max-width: 439px) {
+  .bullets__list-item {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 950px) {
   .bullets__list {
     margin-top: 50px;
