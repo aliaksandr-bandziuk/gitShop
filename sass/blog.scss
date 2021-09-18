@@ -3,11 +3,17 @@
 
 .blog {
   margin-bottom: 100px;
+
+  @media (max-width: 645px) {
+    margin-bottom: 50px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 40px;
+
     &-title {
       font-family: Cormorant;
       font-style: normal;
@@ -17,6 +23,7 @@
       text-transform: uppercase;
       color: #080508;
     }
+    
     &-link {
       font-family: $main-font;
       font-style: normal;
@@ -75,7 +82,12 @@
           text-transform: uppercase;
           color: #FFFFFF;
           margin-bottom: 24px;
+
+          @media (max-width: 600px) {
+            font-size: 20px;
+          }
         }
+
         &-text {
           font-family: $main-font;
           font-style: normal;
@@ -88,6 +100,10 @@
           // width: 65%;
           // margin-left: auto;
           // margin-right: auto;
+
+          @media (max-width: 600px) {
+            font-size: 16px;
+          }
         }
 
         &-button {
@@ -166,6 +182,10 @@
             text-transform: uppercase;
             color: #FFFFFF;
             margin-bottom: 35px;
+
+            @media (max-width: 600px) {
+              font-size: 20px;
+            }
           }
         }
 
@@ -242,6 +262,10 @@
             text-transform: uppercase;
             color: #FFFFFF;
             margin-bottom: 35px;
+
+            @media (max-width: 600px) {
+              font-size: 20px;
+            }
           }
         }
 

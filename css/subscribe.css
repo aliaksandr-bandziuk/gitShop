@@ -454,6 +454,7 @@ input[type=number]:focus {
   line-height: 20px;
   color: #777777;
 }
+@media (max-width: 900px) {
 .subscribe .subscribe__wrapper .subscribe-form .subscribe-button {
   background: #515855;
   border: none;

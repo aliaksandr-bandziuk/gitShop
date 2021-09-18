@@ -63,6 +63,10 @@
         font-size: 16px;
         line-height: 20px;
         color: #777777;
+
+        @media(max-width: 900px) {
+          padding-right: 0;
+    }
       }
 
       .subscribe-button {
@@ -78,6 +82,22 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #FFFFFF;
+
+        @media(max-width: 1360px) {
+            font-size: 14px;
+        }
+
+        @media(max-width: 1285px) {
+            font-size: 14px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media (max-width: 900) {
+          font-size: 12px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
       }
     }
 
@@ -87,34 +107,4 @@
     }
   }
 
-}
-
-@media(max-width: 1360px) {
-  .subscribe-button {
-    font-size: 14px;
-  }
-}
-
-@media(max-width: 1285px) {
-  .subscribe-button {
-    font-size: 14px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media(max-width: 900px) {
-  .subscribe {
-    max-width: 90%;
-    margin-inline: auto;
-
-    .subscribe-input {
-      padding-right: 0;
-    }
-    .subscribe-button {
-      font-size: 12px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
 }
