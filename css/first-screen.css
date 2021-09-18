@@ -397,6 +397,11 @@ input[type=number]:focus {
   -moz-appearance: textfield;
 }
 
+@media (max-width: 940px) {
+  .first-screen {
+    margin-top: 60px;
+  }
+}
 .first-screen img {
   width: 100%;
   max-width: 100%;
@@ -430,6 +435,11 @@ input[type=number]:focus {
   color: #515855;
   padding-top: 10px;
   margin-bottom: 20px;
+}
+@media (max-width: 741px) {
+  .first-screen .swiper-main .slider__content-pretitle {
+    display: none;
+  }
 }
 .first-screen .swiper-main .slider__content-title {
   width: 420px;
@@ -486,6 +496,14 @@ input[type=number]:focus {
   color: #515855;
   margin: 0 auto;
 }
+@media (max-width: 950px) {
+  .first-screen .swiper-main .slider__content .slider__cta-text {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
 .first-screen .swiper-main .slider__content .slider__cta-text:hover {
   color: #fff;
   opacity: 1;
@@ -494,6 +512,11 @@ input[type=number]:focus {
   position: absolute;
   width: 182px;
   height: 59px;
+}
+@media (max-width: 950px) {
+  .first-screen .swiper-main .slider__content .slider__cta {
+    left: calc(55% - 100px);
+  }
 }
 .first-screen .swiper-main .slider__content .slider__cta2 {
   position: absolute;
@@ -529,6 +552,11 @@ input[type=number]:focus {
   width: 182px;
   height: 59px;
 }
+@media (max-width: 950px) {
+  .first-screen .swiper-main .slider__content .slider__cta2 {
+    display: none;
+  }
+}
 .first-screen .swiper-main .slider__content .slider__cta3 {
   position: absolute;
   border: 1px solid #C4C4C4;
@@ -562,6 +590,11 @@ input[type=number]:focus {
   position: absolute;
   width: 182px;
   height: 59px;
+}
+@media (max-width: 950px) {
+  .first-screen .swiper-main .slider__content .slider__cta3 {
+    display: none;
+  }
 }
 .first-screen .swiper-main .slider__buttons {
   position: absolute;
@@ -672,6 +705,11 @@ input[type=number]:focus {
   animation: scroll 10s infinite linear;
   background: #F5F2EF;
 }
+@media (max-width: 950px) {
+  .ticker .marquee__container {
+    display: none;
+  }
+}
 
 @media (max-width: 1250px) {
   .first-screen .swiper-main .slider__content-title {
@@ -680,8 +718,11 @@ input[type=number]:focus {
   }
 }
 @media (max-width: 1000px) {
-  .first-screen .swiper-main .slider__content-title {
+  .first-screen .swiper-main .slider__content-text {
     display: none;
+  }
+  .first-screen .swiper-main .slider__content-title {
+    margin-bottom: 120px;
   }
   .first-screen .swiper-main .slider__buttons {
     display: none;

@@ -2,6 +2,11 @@
 @import 'main';
 
 .first-screen {
+
+  @media (max-width: 940px) {
+    margin-top: 60px;
+  }
+
   img {
     width: 100%;
     max-width: 100%;
@@ -40,6 +45,10 @@
         color: $main-color;
         padding-top: 10px;
         margin-bottom: 20px;
+
+        @media (max-width: 741px) {
+          display: none;
+        }
       }
       &-title {
         width: 420px;
@@ -99,6 +108,13 @@
           color: $main-color;
           margin: 0 auto;
 
+          @media (max-width: 950px) {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+          }
+
           &:hover {
             color: #fff;
             opacity: 1;
@@ -109,6 +125,10 @@
           position: absolute;
           width: 182px;
           height: 59px;
+        }
+
+        @media (max-width: 950px) {
+          left: calc(55% - 100px);
         }
       }
 
@@ -145,6 +165,10 @@
           position: absolute;
           width: 182px;
           height: 59px;
+        }
+
+        @media (max-width: 950px) {
+          display: none;
         }
       }
 
@@ -185,6 +209,10 @@
           position: absolute;
           width: 182px;
           height: 59px;
+        }
+
+        @media (max-width: 950px) {
+          display: none;
         }
       }
     }
@@ -374,6 +402,9 @@
         background: #F5F2EF;
       }
     }
+    @media (max-width: 950px) {
+      display: none;
+    }
   }
 }
   
@@ -454,8 +485,11 @@
   @media(max-width: 1000px) {
     .first-screen {
       .swiper-main {
-        .slider__content-title {
+        .slider__content-text {
           display: none;
+        }
+        .slider__content-title {
+          margin-bottom: 120px;
         }
         .slider__buttons {
           display: none;

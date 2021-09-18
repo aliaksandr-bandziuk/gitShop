@@ -428,8 +428,18 @@ input[type=number]:focus {
   margin-left: 30px;
   margin-right: 30px;
 }
+@media (max-width: 1025px) {
+  .goods__popular .goods__content .goods__slide .slide__numbers {
+    display: none;
+  }
+}
 .goods__popular .goods__content .goods__slide .arrow__left, .goods__popular .goods__content .goods__slide .arrow__right {
   cursor: pointer;
+}
+@media (max-width: 1025px) {
+  .goods__popular .goods__content .goods__slide .arrow__right {
+    margin-left: 20px;
+  }
 }
 .goods__popular .goods__item {
   border: 1px solid #EBE8E1;
@@ -548,8 +558,11 @@ input[type=number]:focus {
   margin-bottom: 25px;
 }
 .goods__popular .goods__item .goods__buttons .goods__btn-pay {
-  width: 215px;
-  background: #515855;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background: #f5893e;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -560,9 +573,12 @@ input[type=number]:focus {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  transition: 0.3s;
 }
 .goods__popular .goods__item .goods__buttons .goods__btn-pay:hover {
-  background: #ff0000;
+  color: #f5893e;
+  background-color: #fff;
+  border: 1px solid #f5893e;
 }
 .goods__popular .goods__item .goods__buttons .goods__btn-cart {
   width: 45px;
