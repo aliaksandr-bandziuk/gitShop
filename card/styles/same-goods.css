@@ -175,8 +175,11 @@
 }
 
 .goods__btn-pay {
-  width: 215px;
-  background: #515855;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background: #f5893e;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -187,10 +190,13 @@
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  transition: .3s;
 }
 
 .goods__btn-pay:hover {
-  background: #ff0000;
+  color: #f5893e;
+  background-color: #fff;
+  border: 1px solid #f5893e;
 }
 
 .goods__btn-cart {

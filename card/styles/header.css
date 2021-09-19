@@ -56,6 +56,7 @@
 .dropdown-item {
   position: relative;
   display: inline-block;
+  transition: .3s;
 }
 
 .dropdown-content {
@@ -76,9 +77,12 @@
 
 .dropbtn-left:hover {cursor: pointer;}
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #f5893e;}
 
-.dropdown-item:hover .dropdown-content {display: block;}
+.dropdown-item:hover .dropdown-content {
+  display: block;
+  /* background-color: #f5893e; */
+}
 
 
 /* contacts */
