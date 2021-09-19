@@ -29,7 +29,7 @@ const cardOptionToggle = () => {
 cardOptionToggle();
 
 const getAmount = () => {
-  
+
   for( i = 0; i < 1; i++) {
     btnPlus.addEventListener('click', () => {
       inputNumber.value++;
