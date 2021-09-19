@@ -474,7 +474,7 @@ input[type=number]:focus {
   font-size: 45px;
   line-height: 120%;
   text-align: center;
-  color: #515855;
+  color: #000;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -489,7 +489,7 @@ input[type=number]:focus {
   line-height: 150%;
   /* or 24px */
   text-align: center;
-  color: #515855;
+  color: #000;
   margin-bottom: 155px;
 }
 .first-screen .swiper-main .slider__content .slider__cta {
