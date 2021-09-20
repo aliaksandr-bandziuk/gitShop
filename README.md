@@ -1,4 +1,4 @@
-# gitShop
+# onlineShop
 
 Фичи:
 
